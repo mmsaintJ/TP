@@ -43,7 +43,7 @@ namespace TP1
             //ex7
             List<double> listDouble = new List<double> { 475125, 47856932, 7412589 };
             AffichageMoyListe(listDouble);
-
+                                        //
             Console.ReadLine();
         }
 
@@ -78,6 +78,24 @@ namespace TP1
 
             Console.WriteLine();
         }
+
+
+
+        static void EcrireMail2()
+        {
+            Console.WriteLine("Ex2 Tronquer un mail");
+            Console.WriteLine("Entrez un nom......");
+            string nom = Console.ReadLine();
+            if (!String.IsNullOrEmpty(nom))
+                if (nom.Length > 6)
+                    nom = nom.Substring(0, 6);
+
+
+            Console.WriteLine(@"{0}@afpa.fr", nom);
+
+            Console.WriteLine();
+        }
+
 
 
         // Ex 3
